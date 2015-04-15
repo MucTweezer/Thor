@@ -1,0 +1,23 @@
+name: Thor
+version: 1.0.0
+description: This plugin allows you to call a bolt of lightning where you're looking.
+author: MucTweezer
+
+main: me.MucTweezer.thor.Thor
+database: false
+
+commands:
+  thor:
+    description: Activates the ability to call lightning by clicking.
+    aliases:
+    permission: thor.thor
+    usage: Syntax error! Only the player may use this command and with no arguments.
+
+permissions:
+  thor.*:
+    description: Gives access to all Thor commands
+    children:
+      thor.thor: true
+  thor.thor:
+    description: Allows the use of the thor command
+    default: op
